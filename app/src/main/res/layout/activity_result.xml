@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        app:cardBackgroundColor="#003545"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:id="@+id/closePopupCorrect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_files_and_folders"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:elevation="5dp"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:id="@+id/result_text_High_Score"
+                    android:text="High Score: "
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:fontFamily="casual"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="7dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start" />
+                <TextView
+                    android:id="@+id/result_total_Ques"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:textColor="#14ffec"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:text="Total Questions: "
+                    />
+                <TextView
+                    android:id="@+id/result_Correct_Ques"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:fontFamily="casual"
+                    android:textColor="#14ffec"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:text="Correct Questions: "
+                    />
+                <TextView
+                    android:id="@+id/result_Wrong_Ques"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="casual"
+                    android:textColor="#14ffec"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:text="Wrong Questions: "
+                    />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:weightSum="2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/result_bt_playAgain"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button_rest_round"
+                        android:padding="10dp"
+                        android:text="Play Again"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/result_bt_mainmenu"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:text="Main Menu"
+                        android:textStyle="bold"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_rest_round"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
